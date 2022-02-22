@@ -1,0 +1,2 @@
+# stuff
+Press the space bar to play. Press any key or hold the mouse down to go up, release the key/mouse to go down. Avoid the ground, ceiling, and the (yellow) lasers. Survive as long as you can. But most importantly, HAVE FUN!!!!! :)

@@ -115,7 +115,7 @@ while actual_running:
             break
         elif (event.type == pygame.KEYDOWN) and time.time() - timy >= 1:
             if (event.key == pygame.K_SPACE):
-				# starting up the game
+                # starting up the game
                 rruning = True
                 Vars.values()
                 global enemy_y
@@ -161,17 +161,21 @@ while actual_running:
 
                 timy = time.time()
     win.fill((225, 225, 225))
-	# rendering the score
-    previous_score = font.render('your score' + ' ' + str(shoots), True,(0, 0, 0))
+    # rendering the score
+    previous_score = font.render('your score' + ' ' + str(shoots), True,
+                                 (0, 0, 0))
     win.blit(previous_score, (align_center(previous_score), 100))
     highscore = open('High Score.txt')
 
-	#rendering the high score
-    high_score = font.render('high score' + ' ' + highscore.read(), True, (0, 0, 0))
-    win.blit(high_score, (align_center(high_score), 100 + high_score.get_height() + 20))
-    pressSpace = smallFont.render('press the space bar to play', True, (0, 0, 0))
-	
-	#rendering the press space bar to play
+    #rendering the high score
+    high_score = font.render('high score' + ' ' + highscore.read(), True,
+                             (0, 0, 0))
+    win.blit(high_score,
+             (align_center(high_score), 100 + high_score.get_height() + 20))
+    pressSpace = smallFont.render('press the space bar to play', True,
+                                  (0, 0, 0))
+
+    #rendering the press space bar to play
     win.blit(pressSpace, (align_center(pressSpace), 250))
     pygame.display.update()
     highscore.close()
